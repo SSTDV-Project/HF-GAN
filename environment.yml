@@ -1,0 +1,17 @@
+name: syn
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch ==2.3.1
+  - pytorch-cuda=12.1
+  - torchaudio ==2.3.1
+  - torchvision ==0.18.1
+  - h5py
+  - pip:
+    - einops
+    - accelerate
+    - torchmetrics
+prefix: /root/miniconda3/envs/syn
