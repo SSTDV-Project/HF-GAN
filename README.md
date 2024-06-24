@@ -1,6 +1,6 @@
 HF-GAN
 ===
-[[Preprint]()]
+[[Preprint](https://arxiv.org/abs/2406.14954)]
 
 This is the official implementation of "A Unified Framework for Synthesizing Multisequence Brain MRI via Hybrid Fusion".
 
@@ -44,6 +44,18 @@ For the IXI dataset
 * GPU: NVIDIA GeForce RTX 3090
 * GPU Driver: 535.129.03
 * Host CUDA version: 12.2
+
+## Citation
+
+```bibtex
+@misc{cho2024unified,
+      title={A Unified Framework for Synthesizing Multisequence Brain MRI via Hybrid Fusion}, 
+      author={Jihoon Cho and Jonghye Woo and Jinah Park},
+      year={2024},
+      eprint={2406.14954},
+      archivePrefix={arXiv}
+}
+```
 
 ## Acknowledgement
 
