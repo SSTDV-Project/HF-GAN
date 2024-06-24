@@ -36,7 +36,7 @@ xxx.hdf5 = {image: 2D slices of C modalities (CxHxW)}
 For the BraTS dataset
   CUDA_VISIBLE_DEVICES=0 python3 train_BraTS.py --dataset data/BraTS --identifier "name of the checkpoints"
 For the IXI dataset
-  CUDA_VISIBLE_DEVICES=0 python3 train_BraTS.py --dataset data/IXI --identifier "name of the checkpoints"
+  CUDA_VISIBLE_DEVICES=0 python3 train_IXI.py --dataset data/IXI --identifier "name of the checkpoints"
 ```
 
 ## Tested environment
@@ -59,4 +59,4 @@ For the IXI dataset
 
 ## Acknowledgement
 
-> This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.00223446, Development of object-oriented synthetic data generation and evaluation methods)
+> This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.00223446, Development of object-oriented synthetic data generation and evaluation methods) and the Technology Innovation Program (20011875, Development of AI-Based Diagnostic Technology for Medical Imaging Devices) funded by the Ministry of Trade, Industry \& Energy (MOTIE, Korea).
