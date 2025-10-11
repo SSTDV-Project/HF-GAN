@@ -384,7 +384,7 @@ class ModalityInfuser(nn.Module):
         self.modality_embed = modality_embed
         #n_tokens = int((240/(2**n_downs)/patch_size)**2)
         self.modality_embedding = nn.Sequential(
-                SinusoidalPositionEmbeddings(hidden_size),
+                nn.Linear(4, hidden_size), # if you want to use Intensity Encoding, change channel 4 to 5 (5 is for median)
                 nn.Linear(hidden_size, hidden_size),
                 nn.SiLU(),
                 nn.Linear(hidden_size, hidden_size),
@@ -398,11 +398,15 @@ class ModalityInfuser(nn.Module):
                 TransformerBlock(hidden_size, n_heads)
             )
 
-    def forward(self, x, m):
+    def forward(self, x, m, i=None):
         B,C,W,H =x.shape
         h = self.embedding(x)
         if self.modality_embed:
-            m = self.modality_embedding(m)
+            one_hot = torch.zeros((B,4), device=x.device) # if you want to use Intensity Encoding, change 4 to 5
+            for n, c in enumerate(m):
+                one_hot[n,c] = 1
+                # one_hot[n,4] = i[n,c] # it's for intensity encoding
+            m = self.modality_embedding(one_hot)
             h = rearrange(m, "b c -> b 1 c") + h
 
         for layer_block in self.layers:
