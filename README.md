@@ -2,7 +2,7 @@ HF-GAN
 ===
 [[Preprint](https://arxiv.org/abs/2406.14954)]
 
-This is the official implementation of "A Unified Framework for Synthesizing Multisequence Brain MRI via Hybrid Fusion".
+This is the official implementation of "Principled Feature Disentanglement for High-Fidelity Unified Brain MRI Synthesis".
 
 ## How to run
 ```bash
