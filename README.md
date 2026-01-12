@@ -48,15 +48,18 @@ For the IXI dataset
 ## Citation
 
 ```bibtex
-@misc{cho2024unified,
-      title={A Unified Framework for Synthesizing Multisequence Brain MRI via Hybrid Fusion}, 
+@misc{cho2025principledfeaturedisentanglementhighfidelity,
+      title={Principled Feature Disentanglement for High-Fidelity Unified Brain MRI Synthesis}, 
       author={Jihoon Cho and Jonghye Woo and Jinah Park},
-      year={2024},
+      year={2025},
       eprint={2406.14954},
-      archivePrefix={arXiv}
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2406.14954}, 
 }
 ```
 
+
 ## Acknowledgement
 
-> This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.00223446, Development of object-oriented synthetic data generation and evaluation methods) and the Technology Innovation Program (20011875, Development of AI-Based Diagnostic Technology for Medical Imaging Devices) funded by the Ministry of Trade, Industry \& Energy (MOTIE, Korea).
+>This work was supported by Institute for Information \& communications Technology Promotion(IITP) grant funded by the Korea government (MSIT) (No.00223446, Development of object-oriented synthetic data generation and evaluation methods).
