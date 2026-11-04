@@ -57,7 +57,7 @@ For the IXI dataset
 ## Citation
 
 ```bibtex
-@article{2026Structured,
+@article{cho2026structured,
 title = {Structured feature disentanglement for high-fidelity unified brain MRI synthesis},
 journal = {Computerized Medical Imaging and Graphics},
 pages = {102838},
