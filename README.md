@@ -1,8 +1,10 @@
 HF-GAN
 ===
-[[Preprint](https://arxiv.org/abs/2406.14954)]
+[[Preprint-v1](https://arxiv.org/abs/2406.14954v1)]
+[[Preprint-v2](https://arxiv.org/abs/2406.14954)]
+[[Paper](https://doi.org/10.1016/j.compmedimag.2026.102838)]
 
-This is the official implementation of "Principled Feature Disentanglement for High-Fidelity Unified Brain MRI Synthesis".
+This is the official implementation of "Structured feature disentanglement for high-fidelity unified brain MRI synthesis".
 
 ## How to run
 ```bash
@@ -31,7 +33,14 @@ We use the hdf5 format for training.
 ```
 xxx.hdf5 = {image: 2D slices of C modalities (CxHxW)}
 ```
-### Training
+
+## Dataset
+
+BraTS 2018: https://www.med.upenn.edu/sbia/brats2018/data.html
+
+IXI: https://brain-development.org/ixi-dataset
+
+## Training
 ```
 For the BraTS dataset
   CUDA_VISIBLE_DEVICES=0 python3 train_BraTS.py --dataset data/BraTS --identifier "name of the checkpoints"
@@ -48,14 +57,15 @@ For the IXI dataset
 ## Citation
 
 ```bibtex
-@misc{cho2025principledfeaturedisentanglementhighfidelity,
-      title={Principled Feature Disentanglement for High-Fidelity Unified Brain MRI Synthesis}, 
-      author={Jihoon Cho and Jonghye Woo and Jinah Park},
-      year={2025},
-      eprint={2406.14954},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      url={https://arxiv.org/abs/2406.14954}, 
+@article{2026Structured,
+title = {Structured feature disentanglement for high-fidelity unified brain MRI synthesis},
+journal = {Computerized Medical Imaging and Graphics},
+pages = {102838},
+year = {2026},
+issn = {0895-6111},
+doi = {https://doi.org/10.1016/j.compmedimag.2026.102838},
+url = {https://www.sciencedirect.com/science/article/pii/S0895611126001412},
+author = {Jihoon Cho and Jonghye Woo and Jinah Park}
 }
 ```
 
